@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유솔루션 - 기업 홈페이지</title>
+    <meta name="description" content="유솔루션의 공식 기업 홈페이지입니다.">
+    <meta property="og:title" content="유솔루션">
+    <meta property="og:description" content="유솔루션 공식 홈페이지에 오신 것을 환영합니다.">
+    <!-- Google Fonts: Pretendard for modern UI -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#hero"><span>U</span>-SOLUTION</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about">회사소개</a></li>
+                    <li><a href="#business">사업분야</a></li>
+                    <li><a href="#testing">품질테스팅</a></li>
+                    <li><a href="#insights">기술Insight</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary open-modal-btn">프로젝트 문의</button>
+                <button class="menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav-overlay"></div>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="#about">회사소개</a></li>
+                <li><a href="#business">사업분야</a></li>
+                <li><a href="#testing">품질테스팅</a></li>
+                <li><a href="#insights">기술Insight</a></li>
+                <li><a href="#" class="open-modal-btn">프로젝트 문의</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- 배경 동영상 (서울대 홈페이지와 같은 역동적 연출) -->
+        <video class="hero-video-bg" autoplay loop muted playsinline poster="./images/hero_bg.png">
+            <!-- 임시 대체 영상(AI/SW/연구개발 느낌). 추후 실제 기업/현장 시연 영상(MP4)으로 src를 교체해주세요. -->
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-time-lapse-of-computer-programmer-working-42749-large.mp4" type="video/mp4">
+            브라우저가 동영상을 지원하지 않습니다.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">Since 2023.11</span>
+            <h1 class="hero-title">AI SW 품질혁신 &<br>전시마케팅 <span>토탈 솔루션</span></h1>
+            <p class="hero-subtitle">디지털 혁신과 브랜드 가치의 통합 전문가, 기술의 가치를 지키고 세상에 알립니다.</p>
+            <div class="hero-buttons">
+                <a href="#business" class="btn btn-primary btn-large">서비스 알아보기</a>
+                <button class="btn btn-outline btn-large open-modal-btn">무료 상담 신청</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="stats" class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="2023">0</div>
+                <div class="stat-label">설립연도</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="20">0</div>
+                <div class="stat-label">누적 수행 프로젝트 (건)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">전시 납품 실적 (건)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">검증 진출 핵심 산업군 (분야)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">회사 개요</h2>
+                <p class="section-desc">유솔루션의 궁극적인 지향점은 "기술의 가치를 지키고(Quality), 세상에 알리는(Branding) 최고의 파트너"가 되는 것입니다.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>AI 검증 솔루션 시장 확대</h3>
+                    <p>국가 기간산업의 절대적 안전을 책임진다는 사명감 아래, 친환경 에너지 및 SMR 안전을 위한 AI 기반 무결성 검증 체계를 고도화합니다.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🌍</div>
+                    <h3>글로벌 기술 마케팅 선도</h3>
+                    <p>국내 우수 IT 기업들의 글로벌 전시 진출을 돕는 'Technical Branding' 전문 에이전시로 도약하여, 시장 진입을 가속화합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section id="business" class="business-section">
+        <div class="container">
+             <div class="section-header">
+                <h2 class="section-title">주요 사업 분야</h2>
+                <p class="section-desc">최고 수준의 AI 품질 테스팅부터 브랜딩을 위한 최적의 전시 마케팅까지 아우릅니다.</p>
+            </div>
+            <div class="business-grid">
+                <!-- Business 1 -->
+                <div class="business-card hover-lift">
+                    <div class="business-img-wrapper">
+                        <img src="./images/ai_testing.png" alt="AI SW Testing">
+                        <div class="business-overlay"></div>
+                    </div>
+                    <div class="business-content">
+                        <h3>AI SW 품질 테스팅 & 보안</h3>
+                        <p>국제표준(IEEE 1012, ISO 26262) 컨설팅 및 무결성 보장. 요구사항 분석 기반의 테스트 및 SAST/DAST 취약점 점검을 수행합니다.</p>
+                        <a href="#" class="text-link open-modal-btn" data-target="testingModal">자세히 보기 →</a>
+                    </div>
+                </div>
+                <!-- Business 2 -->
+                <div class="business-card hover-lift">
+                    <div class="business-img-wrapper">
+                        <img src="./images/on_device_ai.png" alt="On-Device AI 솔루션">
+                        <div class="business-overlay"></div>
+                    </div>
+                    <div class="business-content">
+                        <h3>온디바이스 AI 솔루션</h3>
+                        <p>저전력 On-Device AI 사물 인식 카메라 모듈을 제작하고, 음성 및 비전 데이터 라벨링과 고품질 가공 모델링 서비스를 지원합니다.</p>
+                        <a href="#" class="text-link open-modal-btn" data-target="ondeviceModal">자세히 보기 →</a>
+                    </div>
+                </div>
+                <!-- Business 3 -->
+                <div class="business-card hover-lift">
+                    <div class="business-img-wrapper">
+                        <img src="./images/exhibition.png" alt="Exhibition Marketing">
+                        <div class="business-overlay"></div>
+                    </div>
+                    <div class="business-content">
+                        <h3>전시 마케팅 토탈 솔루션</h3>
+                        <p>독립/조립 부스 기획 및 3D 렌더링, 시각적 임팩트를 극대화하는 그래픽 출력/시공과 브랜드 정체성을 담은 프리미엄 홍보물을 제작합니다.</p>
+                        <a href="#" class="text-link open-modal-btn" data-target="marketingModal">자세히 보기 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References & Clients Section -->
+    <section id="references" class="references-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">주요 레퍼런스 및 파트너</h2>
+                <p class="section-desc">유솔루션과 함께 성공을 이끌어가는 주요 고객사와 프로젝트 내역입니다.</p>
+            </div>
+            
+            <div class="references-grid">
+                <!-- Partner Category 1 -->
+                <div class="ref-card">
+                    <h3 class="ref-category">SW 품질 검증 프로젝트</h3>
+                    <ul class="ref-list">
+                        <li><strong>광주테크노파크:</strong> AI 기반 소프트웨어 시험평가 및 품질검증 지원</li>
+                        <li><strong>스패로우:</strong> 소스코드 보안 약점 진단(SAST) 및 품질 솔루션 기술 협력</li>
+                        <li><strong>인공지능산업융합사업단:</strong> XpecAI 장비 라이선스 납품 및 실증 지원</li>
+                    </ul>
+                </div>
+                
+                <!-- Partner Category 2 -->
+                <div class="ref-card">
+                    <h3 class="ref-category">전시 마케팅 전문 수행</h3>
+                    <ul class="ref-list">
+                        <li><strong>포어스딜라이트:</strong> 디지털 혁신을 위한 전시 브랜드 마케팅 및 디자인 파트너십</li>
+                        <li><strong>국제인공지능대전:</strong> 전시 기획/시공, 시연영상, 판촉물 제공 (24~25y)</li>
+                        <li><strong>부산국제원자력에너지산업전:</strong> 원전 특화 브로슈어 디자인 및 B2B 네트워킹 (24~25y)</li>
+                        <li><strong>AIoT 국제전시회:</strong> 기술시연 기획 및 홍보물 3천세트 납품 (24y)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Logo Marquee (4 Sets for Infinite Scroll) -->
+            <div class="clients-marquee">
+                <div class="marquee-track">
+                    <!-- Set 1 -->
+                    <img src="./images/logos/gjtp.png" alt="광주테크노파크" class="client-logo-img">
+                    <img src="./images/logos/aica.png" alt="인공지능산업융합사업단" class="client-logo-img">
+                    <img src="./images/logos/kaif.png" alt="한국원자력산업협회" class="client-logo-img">
+                    <img src="./images/logos/sparrow.png" alt="스패로우" class="client-logo-img">
+                    <img src="./images/logos/fores.png" alt="포어스딜라이트" class="client-logo-img">
+                    <!-- Set 2 -->
+                    <img src="./images/logos/gjtp.png" alt="광주테크노파크" class="client-logo-img">
+                    <img src="./images/logos/aica.png" alt="인공지능산업융합사업단" class="client-logo-img">
+                    <img src="./images/logos/kaif.png" alt="한국원자력산업협회" class="client-logo-img">
+                    <img src="./images/logos/sparrow.png" alt="스패로우" class="client-logo-img">
+                    <img src="./images/logos/fores.png" alt="포어스딜라이트" class="client-logo-img">
+                    <!-- Set 3 -->
+                    <img src="./images/logos/gjtp.png" alt="광주테크노파크" class="client-logo-img">
+                    <img src="./images/logos/aica.png" alt="인공지능산업융합사업단" class="client-logo-img">
+                    <img src="./images/logos/kaif.png" alt="한국원자력산업협회" class="client-logo-img">
+                    <img src="./images/logos/sparrow.png" alt="스패로우" class="client-logo-img">
+                    <img src="./images/logos/fores.png" alt="포어스딜라이트" class="client-logo-img">
+                    <!-- Set 4 -->
+                    <img src="./images/logos/gjtp.png" alt="광주테크노파크" class="client-logo-img">
+                    <img src="./images/logos/aica.png" alt="인공지능산업융합사업단" class="client-logo-img">
+                    <img src="./images/logos/kaif.png" alt="한국원자력산업협회" class="client-logo-img">
+                    <img src="./images/logos/sparrow.png" alt="스패로우" class="client-logo-img">
+                    <img src="./images/logos/fores.png" alt="포어스딜라이트" class="client-logo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Insights (AI SW Trends) -->
+    <section id="insights" class="insights-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">기술 Insight</h2>
+                <p class="section-desc">품질 테스팅 및 최신 AI SW 트렌드를 분석합니다.</p>
+            </div>
+            
+            <div class="tags-cloud">
+                <span class="tag active">#All</span>
+                <span class="tag">#OnDeviceAI</span>
+                <span class="tag">#AI_Robustness</span>
+                <span class="tag">#Test_Automation</span>
+                <span class="tag">#DataQuality</span>
+            </div>
+
+            <div class="insight-grid">
+                <div class="insight-item">
+                    <div class="insight-tag">#OnDeviceAI</div>
+                    <h4>온디바이스 AI와 경량화 기술 발전</h4>
+                    <p>클라우드를 거치지 않고 기기 자체에서 구동되는 저전력 온디바이스 AI 사물 인식 기술과 이를 뒷받침하는 지속적인 경량화 체계 최신 기술 동향.</p>
+                    <span class="insight-date">2024.05.20</span>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-tag">#AI_Robustness</div>
+                    <h4>AI 모델 강건성 및 고신뢰 검증 전략</h4>
+                    <p>원전 등 단 하나의 오류도 치명적인 국가 기간산업에서 AI 모델(XpecAI, REIN)의 안전성과 신뢰성 검증 방법론.</p>
+                    <span class="insight-date">2024.04.12</span>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-tag">#Test_Automation</div>
+                    <h4>AI 기반 테스트 자동화 최적화</h4>
+                    <p>소프트웨어 품질 테스트의 효율성을 극대화하기 위해 'AI 기반 테스트 케이스 자동 생성 솔루션'에 AI를 접목하여 지능화하는 핵심 흐름.</p>
+                    <span class="insight-date">2024.03.05</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>고객사 기술의 가치를 가장 완벽하게 전달합니다</h2>
+            <p>유솔루션의 AI 솔루션과 전시 마케팅 전문가가 귀하의 비즈니스 성장을 지원합니다.</p>
+            <button class="btn btn-primary btn-large mt-4 open-modal-btn">전문가와 상담하기</button>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo"><span>U</span>-SOLUTION</div>
+                    <p class="mt-4 text-gray">AI SW 품질혁신 & 전시마케팅<br>최상의 솔루션을 제공하는 디지털 혁신 리더</p>
+                </div>
+                <div class="footer-links">
+                    <h4>메뉴</h4>
+                    <ul>
+                        <li><a href="#about">회사소개</a></li>
+                        <li><a href="#business">사업분야</a></li>
+                        <li><a href="#insights">기술인사이트</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>고객센터</h4>
+                    <p><strong>이메일:</strong> syk434@naver.com</p>
+                    <p><strong>전화:</strong> 02-0000-0000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 U-SOLUTION. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Testing Detail Modal -->
+    <div id="testingModal" class="modal-overlay detail-overlay">
+        <div class="modal-content detail-modal">
+            <button class="modal-close" aria-label="닫기">&times;</button>
+            <h2 class="modal-title">AI SW 품질 테스팅 & 보안 상세</h2>
+            <div class="modal-body" style="text-align: left; padding: 1.5rem; line-height: 1.7; color: #4b5563;">
+                <p style="font-size: 1.1rem; color: #1e3a8a; font-weight: 700; margin-bottom: 20px;">
+                    완벽한 안전과 무결성을 향한 유솔루션의 AI 품질 테스팅
+                </p>
+                <ul style="padding-left: 20px; list-style-type: decimal;">
+                    <li style="margin-bottom: 12px;"><strong>국제 표준 컨설팅:</strong> 소프트웨어 무결성과 최고 수준의 품질을 보장하는 IEEE 1012, ISO 26262 등 국제 표준 시스템을 고객의 환경에 최적화하여 설계 및 컨설팅합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>요구사항 기반 테스팅:</strong> 단순 버그 탐지를 넘어, 최초 개발 명세 및 기획 단계의 요구사항이 100% 충족되었는지 검증하는 정밀 추적성 테스트를 지원합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>보안 및 취약점 점검 (SAST/DAST):</strong> 통합된 정적/동적 애플리케이션 보안 테스팅(SAST/DAST)을 통해 해킹 위험, 소스코드 결함, 그리고 런타임 환경의 미세한 취약점까지 사전에 완벽하게 차단합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>AI 모델 강건성 검증:</strong> 블랙박스 상태의 AI 엔진도 XpecAI 딥러닝 테스트 자동화 장비 등을 활용해 적대적 공격은 물론 극한의 환경에서도 안전한지 평가합니다.</li>
+                </ul>
+                <p style="margin-top: 20px; text-align: center; color: #111827; font-weight: 600;">단 하나의 작은 결함도 허용할 수 없는 산업군에서 완벽하게 작동하도록 품질을 끌어올리십시오.</p>
+                <div class="form-actions text-center" style="margin-top: 30px;">
+                    <button class="btn btn-primary switch-modal-btn" data-target="contactModal" data-close="testingModal">해당 서비스 문의하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- On-Device Detail Modal -->
+    <div id="ondeviceModal" class="modal-overlay detail-overlay">
+        <div class="modal-content detail-modal">
+            <button class="modal-close" aria-label="닫기">&times;</button>
+            <h2 class="modal-title">온디바이스 AI 솔루션 상세</h2>
+            <div class="modal-body" style="text-align: left; padding: 1.5rem; line-height: 1.7; color: #4b5563;">
+                <p style="font-size: 1.1rem; color: #1e3a8a; font-weight: 700; margin-bottom: 20px;">
+                    클라우드 없는 초고속 실시간 AI 엣지(Edge) 솔루션
+                </p>
+                <ul style="padding-left: 20px; list-style-type: decimal;">
+                    <li style="margin-bottom: 12px;"><strong>초저전력 스마트 비전 AI 모듈:</strong> 전원 공급이 원활하지 않거나 클라우드와 통신이 어려운 열악한 환경에서도 장기간 독자적으로 작동하는 저전력 AI 카메라 엣지 컴퓨터를 제공합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>강력한 사물 인식 및 추적:</strong> 화재 감지, 안전모 및 보호구 착용 식별, 공장 결함 탐지 등 다양한 객체를 실시간으로 인식하며 오작동률을 최소화한 최정예 경량화 모델이 탑재됩니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>맞춤형 고품질 데이터 가공:</strong> AI 모델의 정확도를 좌우하는 핵심 기술. 유솔루션은 음성/비전 영역에서 AI가 가장 학습하기 좋은 형태로 직접 라벨링을 수행합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>플러그 앤 플레이:</strong> 별도의 서버망 세팅 없이 현장의 장비에 즉각적으로 부착하여 바로 관제 모니터링이 가능하도록 통합 솔루션으로 납품합니다.</li>
+                </ul>
+                <p style="margin-top: 20px; text-align: center; color: #111827; font-weight: 600;">데이터 유출 우려가 전혀 없으며 처리 속도가 압도적으로 빠릅니다.</p>
+                <div class="form-actions text-center" style="margin-top: 30px;">
+                    <button class="btn btn-primary switch-modal-btn" data-target="contactModal" data-close="ondeviceModal">해당 서비스 문의하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketing Detail Modal -->
+    <div id="marketingModal" class="modal-overlay detail-overlay">
+        <div class="modal-content detail-modal">
+            <button class="modal-close" aria-label="닫기">&times;</button>
+            <h2 class="modal-title">전시 마케팅 토탈 솔루션 상세</h2>
+            <div class="modal-body" style="text-align: left; padding: 1.5rem; line-height: 1.7; color: #4b5563;">
+                <p style="font-size: 1.1rem; color: #1e3a8a; font-weight: 700; margin-bottom: 20px;">
+                    브랜드의 핵심 가치를 시각적으로 극대화하는 완벽한 마케팅 파트너
+                </p>
+                <ul style="padding-left: 20px; list-style-type: decimal;">
+                    <li style="margin-bottom: 12px;"><strong>독립·조립 부스 기획 및 3D 렌더링:</strong> 기업이 추구하는 정체성을 담은 독창적인 전시 공간을 기획부터 3D 디자인 시안 렌더링까지 완벽한 퀄리티로 제안합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>고품질 그래픽 출력 및 전문 시공:</strong> 박람회 현장에서 관람객의 시선을 완벽히 사로잡는 선명한 출력물 제작 기능과 다년간 경험을 축적한 전문 시공팀의 무결점 설치/철거를 지원합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>브랜드 맞춤형 프리미엄 홍보물:</strong> 핵심 기술의 가치를 전하는 브로슈어, 리플렛 디자인부터 고객 체류와 유입을 극대화하는 시연 영상 및 고급 판촉물(사은품)을 최적화하여 공급합니다.</li>
+                    <li style="margin-bottom: 12px;"><strong>전시 전략 기반 현장 컨설팅:</strong> 단순 구축에 그치지 않고 참관객 동선 유도, 기술 시연(Demo) 스테이션 배치 등 실질적인 B2B 브랜드 성과(Lead Generation) 창출을 위한 종합 컨설팅을 제공합니다.</li>
+                </ul>
+                <p style="margin-top: 20px; text-align: center; color: #111827; font-weight: 600;">국내외 글로벌 박람회의 성공적인 경험을 유솔루션과 함께 설계하십시오.</p>
+                <div class="form-actions text-center" style="margin-top: 30px;">
+                    <button class="btn btn-primary switch-modal-btn" data-target="contactModal" data-close="marketingModal">해당 서비스 문의하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="닫기">&times;</button>
+            <h2 class="modal-title">프로젝트 문의</h2>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group row">
+                    <label>회사명 <span class="required">*</span></label>
+                    <input type="text" name="회사명" required>
+                </div>
+                <div class="form-group row">
+                    <label>성함 <span class="required">*</span></label>
+                    <input type="text" name="성함" required>
+                </div>
+                <div class="form-group row">
+                    <label>연락처 <span class="required">*</span></label>
+                    <div class="phone-input">
+                        <input type="text" name="연락처1" maxlength="3" required> <span class="dash">-</span>
+                        <input type="text" name="연락처2" maxlength="4" required> <span class="dash">-</span>
+                        <input type="text" name="연락처3" maxlength="4" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label>이메일 <span class="required">*</span></label>
+                    <input type="email" name="이메일" required>
+                </div>
+                <div class="form-group row">
+                    <label>문의내용 <span class="required">*</span></label>
+                    <textarea name="문의내용" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="full-label">유솔루션을 알게 된 경로</label>
+                    <div class="radio-grid">
+                        <label><input type="radio" name="알게된경로" value="구글 검색"> 구글 검색</label>
+                        <label><input type="radio" name="알게된경로" value="네이버 검색"> 네이버 검색</label>
+                        <label><input type="radio" name="알게된경로" value="기타 인터넷 검색"> 기타 인터넷 검색</label>
+                        <label><input type="radio" name="알게된경로" value="기존고객"> 기존고객</label>
+                        <label><input type="radio" name="알게된경로" value="eDM(홍보메일)"> eDM(홍보메일)</label>
+                        <label><input type="radio" name="알게된경로" value="SNS"> SNS(페이스북, 유튜브, 블로그 등)</label>
+                        <label><input type="radio" name="알게된경로" value="배너광고"> 배너광고</label>
+                        <label><input type="radio" name="알게된경로" value="지인추천"> 지인추천</label>
+                        <label><input type="radio" name="알게된경로" value="오프라인 행사"> 컨퍼런스, 세미나</label>
+                        <label><input type="radio" name="알게된경로" value="현수막"> 현수막</label>
+                        <label><input type="radio" name="알게된경로" value="생성형 AI 추천"> 생성형 AI 추천</label>
+                        <label class="radio-with-input" style="grid-column: span 3;">
+                            <input type="radio" name="알게된경로" value="기타"> 기타:
+                            <input type="text" name="기타입력" class="sm-input" placeholder="직접입력">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="full-label">(선택) 마케팅 정보 수신 동의</label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="마케팅동의" value="동의"> 동의 (하단의 마케팅 정보 수신 동의 안내 확인)
+                    </label>
+                </div>
+
+                <div class="form-group policy-group">
+                    <label class="full-label">개인정보 수집 및 이용 동의 <span class="required">*</span></label>
+                    <div class="policy-box">
+                        <p><strong>1. 개인정보 수집·이용 목적</strong><br>
+                        유솔루션(이하 '회사')은 고객의 개인정보를 중요시하며, 개인정보에 관한 법률을 준수하고 있습니다. 회사는 개인정보 수집·이용 동의서를 통하여 고객이 제공하는 개인정보를 회사가 제공하는 서비스 관련 업무를 위한 고객과의 원활한 연락(커뮤니케이션), 문의사항에 대한 답변 및 안내, 서비스 관련 정보제공 등에 사용하며, 개인정보 제공자가 동의한 내용 외의 다른 목적으로 수집된 개인정보를 활용하지 않습니다.</p>
+                        <br>
+                        <p><strong>2. 개인정보 수집 항목</strong><br>
+                        - 필수항목 : 회사명, 성함, 연락처, 이메일, 문의내용</p>
+                    </div>
+                    <label class="checkbox-label mt-2">
+                        <input type="checkbox" name="개인정보동의" required> 개인정보 수집 및 이용에 동의합니다.
+                    </label>
+                </div>
+
+                <div class="form-actions text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-large btn-submit">문의 접수하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
